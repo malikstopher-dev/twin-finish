@@ -95,8 +95,8 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-media">
           <ArtImage
-            src="/images/twinfinish/01_Home/home-hero-desktop.webp"
-            mobileSrc="/images/twinfinish/01_Home/home-hero-mobile.webp"
+            src="/images/twinfinish/01_Home/hero-home-desktop.webp"
+            mobileSrc="/images/twinfinish/01_Home/hero-home-mobile.webp"
             alt="TwinFinish founder and crew working on a Cape Town property above the bay"
             width={1672}
             height={941}
@@ -104,8 +104,8 @@ export default function HomePage() {
             mobileHeight={1672}
             loading="eager"
             fetchPriority="high"
-        focal="0% 38%"
-        mobileFocal="center 35%"
+            focal="center 42%"
+            mobileFocal="center 16%"
           />
         </div>
 

@@ -53,36 +53,6 @@ export default function ContactPage() {
               arrange a quotation with the team.
             </p>
 
-            <div className="contact-points">
-              {points.map((point) => {
-                const body = (
-                  <>
-                    <span aria-hidden="true">{point.icon}</span>
-                    <div>
-                      <b>{point.label}</b>
-                      <span>{point.value}</span>
-                    </div>
-                  </>
-                );
-
-                return point.href ? (
-                  <a
-                    className="contact-point"
-                    key={point.label}
-                    href={point.href}
-                    target={point.href.startsWith("http") ? "_blank" : undefined}
-                    rel={point.href.startsWith("http") ? "noreferrer" : undefined}
-                  >
-                    {body}
-                  </a>
-                ) : (
-                  <div className="contact-point" key={point.label}>
-                    {body}
-                  </div>
-                );
-              })}
-            </div>
-
             <div className="btn-row">
               <a className="btn btn--primary" href={PHONE_HREF}>
                 Call now
@@ -105,8 +75,8 @@ export default function ContactPage() {
 
         <div className="contact-photo">
           <ArtImage
-            src="/images/twinfinish/05_Contact/contact-hero-desktop.webp"
-            mobileSrc="/images/twinfinish/05_Contact/contact-hero-mobile.webp"
+            src="/images/twinfinish/05_Contact/hero-contact-desktop.webp"
+            mobileSrc="/images/twinfinish/05_Contact/hero-contact-mobile.webp"
             alt="TwinFinish enquiry desk with headset ready to take your call"
             width={1672}
             height={941}
@@ -114,9 +84,41 @@ export default function ContactPage() {
             mobileHeight={1672}
             loading="eager"
             fetchPriority="high"
-            focal="84% 30%"
-            mobileFocal="center 26%"
+            focal="68% 30%"
+            mobileFocal="center 8%"
           />
+        </div>
+      </section>
+
+      <section className="contact-band" aria-label="Ways to reach TwinFinish">
+        <div className="container contact-band-grid">
+          {points.map((point) => {
+            const body = (
+              <>
+                <span aria-hidden="true">{point.icon}</span>
+                <div>
+                  <b>{point.label}</b>
+                  <span>{point.value}</span>
+                </div>
+              </>
+            );
+
+            return point.href ? (
+              <a
+                className="contact-point"
+                key={point.label}
+                href={point.href}
+                target={point.href.startsWith("http") ? "_blank" : undefined}
+                rel={point.href.startsWith("http") ? "noreferrer" : undefined}
+              >
+                {body}
+              </a>
+            ) : (
+              <div className="contact-point" key={point.label}>
+                {body}
+              </div>
+            );
+          })}
         </div>
       </section>
 

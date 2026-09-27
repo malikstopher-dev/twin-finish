@@ -18,15 +18,15 @@ export default function ProjectsPage() {
         eyebrow="Project gallery"
         title="A visual standard for the work."
         lead="This concept gallery establishes the photography and presentation direction for TwinFinish. Real completed-project photographs replace these concept visuals before launch."
-        image="/images/twinfinish/04_Projects/project-team-workmanship.webp"
-        mobileImage="/images/twinfinish/04_Projects/project-team-workmanship-mobile.webp"
-        alt="TwinFinish team working on a Cape Town property, concept visual"
+        image="/images/twinfinish/04_Projects/hero-projects-desktop.webp"
+        mobileImage="/images/twinfinish/04_Projects/hero-projects-mobile.webp"
+        alt="TwinFinish crew painting and tiling a Cape Town property above the bay, concept visual"
         desktopWidth={1672}
         desktopHeight={941}
-        mobileWidth={800}
-        mobileHeight={1000}
-        focal="center 55%"
-        mobileFocal="center 24%"
+        mobileWidth={941}
+        mobileHeight={1672}
+        focal="center 46%"
+        mobileFocal="center 18%"
       />
 
       <section className="section">

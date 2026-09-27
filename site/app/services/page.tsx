@@ -38,10 +38,10 @@ const deepDives = [
     title: "Request a quote",
     copy: "Tell us about the space, location and work required.",
     href: "/contact",
-    image: "/images/twinfinish/05_Contact/contact-hero-desktop.webp",
+    image: "/images/twinfinish/05_Contact/hero-contact-desktop.webp",
     width: 1672,
     height: 941,
-    focal: "72% 45%",
+    focal: "58% 30%",
     alt: "TwinFinish enquiry desk ready to take your call",
   },
 ];
@@ -53,15 +53,15 @@ export default function ServicesPage() {
         eyebrow="Services"
         title="Painting and tiling, handled with care."
         lead="Focused services for residential, rental, office and commercial spaces, from surface preparation through to the final finish."
-        image="/images/twinfinish/03_Services/renovation-exterior.webp"
-        mobileImage="/images/twinfinish/03_Services/renovation-exterior-mobile.webp"
-        alt="TwinFinish painters finishing the exterior of a Cape Town villa"
-        desktopWidth={1448}
-        desktopHeight={1086}
-        mobileWidth={800}
-        mobileHeight={1000}
-        focal="center 52%"
-        mobileFocal="center 45%"
+        image="/images/twinfinish/03_Services/hero-services-desktop.webp"
+        mobileImage="/images/twinfinish/03_Services/hero-services-mobile.webp"
+        alt="TwinFinish painters rolling an exterior wall on a Cape Town villa project"
+        desktopWidth={1672}
+        desktopHeight={941}
+        mobileWidth={941}
+        mobileHeight={1672}
+        focal="center 44%"
+        mobileFocal="center 24%"
       />
 
       <section className="section section--white">
