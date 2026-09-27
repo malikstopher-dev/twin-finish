@@ -1,0 +1,53 @@
+TWINFINISH IMAGE / RESPONSIVE ART-DIRECTION PASS
+
+MISSION
+Fix the current TwinFinish site without rebuilding its architecture. The current localhost version repeats the same photographs across Home, About, Services and Projects, uses the same tiling photograph for multiple tiling cards, allows hero typography to cover important subjects, and crops contact/hero photography badly on mobile.
+
+ASSET ROOT
+Copy this pack into the project's public/images/twinfinish/ directory while preserving subfolders, or adapt import paths to the current project structure.
+
+REQUIRED ASSIGNMENT
+HOME
+- Desktop hero -> 01_Home/home-hero-desktop.webp
+- Mobile hero -> 01_Home/home-hero-mobile.webp
+
+ABOUT
+- Founder -> 02_About/about-founder-portrait.webp
+- Team -> 02_About/about-team.webp
+- Where We Work -> 02_About/about-service-area.webp
+
+SERVICES
+- Exterior Painting -> 03_Services/exterior-painting.webp
+- Floor Tiling -> 03_Services/floor-tiling.webp
+- Bathroom / Toilet Wall Tiling -> 03_Services/bathroom-wall-tiling.webp
+- Renovation / Exterior -> 03_Services/renovation-exterior.webp
+
+CRITICAL BUG TO REMOVE
+Floor Tiling and Bathroom/Toilet Tiling currently appear to use the same photograph. They MUST use different imports and different files. Search the whole codebase for duplicate src values and fix them.
+
+CONTACT
+- Desktop -> 05_Contact/contact-hero-desktop.webp
+- Mobile -> 05_Contact/contact-hero-mobile.webp
+Use a <picture> element or breakpoint-specific Next/Image rendering. Do NOT use one landscape image and rely on object-fit:cover for both viewports.
+
+HERO LAYOUT
+The current H1 blocks dominate and obstruct the photographs. Preserve the wording but rebalance the composition.
+Desktop: target roughly 40-45% text / 55-60% image. Prefer split/editorial layout where possible.
+Mobile: use dedicated portrait image, reduce H1 footprint, preserve subject visibility and CTA access.
+Never place large text over a face.
+
+RESPONSIVE QA SIZES
+393x852, 430x932, 768x1024, 1366x768, 1440x900, 1920x1080.
+At every size verify that faces, tools and work actions remain visible and that no image is unintentionally cropped.
+
+PROJECTS PAGE
+Do not fill the Projects grid with founder portraits. A project grid should visually prioritize work, spaces, tools and finishes. Reuse an existing service image only when necessary and never duplicate the same source within the same visible row.
+
+DO NOT
+- invent project claims, reviews, years of experience or addresses
+- change the TwinFinish name, navy/orange palette, number 063 499 7520 or verified copy
+- remove routes or SEO
+- globally apply object-position:center to every image
+
+AFTER CHANGES
+Run lint and production build. Report: changed files, exact image mapping, duplicate-image references removed, responsive sizes tested, and any remaining assets still needing a real project photograph.

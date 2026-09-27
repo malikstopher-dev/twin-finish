@@ -1,0 +1,12 @@
+# logs / env / os
+*.log
+.env*
+.DS_Store
+Thumbs.db
+
+# dependencies & builds (site/.gitignore covers site/ specifics)
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
