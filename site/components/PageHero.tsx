@@ -14,6 +14,7 @@ type PageHeroProps = {
   mobileHeight?: number;
   focal?: string;
   mobileFocal?: string;
+  clearPhoto?: boolean;
 };
 
 export default function PageHero({
@@ -29,9 +30,10 @@ export default function PageHero({
   mobileHeight = 1440,
   focal = "center 42%",
   mobileFocal = "center 35%",
+  clearPhoto = false,
 }: PageHeroProps) {
   return (
-    <section className="page-hero">
+    <section className={clearPhoto ? "page-hero page-hero--clear" : "page-hero"}>
       <div className="page-hero-media">
         <ArtImage
           src={image}

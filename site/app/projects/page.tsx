@@ -15,6 +15,7 @@ export default function ProjectsPage() {
   return (
     <>
       <PageHero
+        clearPhoto
         eyebrow="Project gallery"
         title="A visual standard for the work."
         lead="This concept gallery establishes the photography and presentation direction for TwinFinish. Real completed-project photographs replace these concept visuals before launch."
@@ -26,7 +27,7 @@ export default function ProjectsPage() {
         mobileWidth={941}
         mobileHeight={1672}
         focal="center 46%"
-        mobileFocal="center 18%"
+        mobileFocal="center 35%"
       />
 
       <section className="section">

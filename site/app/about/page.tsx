@@ -84,6 +84,17 @@ export default function AboutPage() {
               loading="eager"
               fetchPriority="high"
             />
+            <picture className="hero-split-mobile-picture">
+              <Image
+                src="/images/twinfinish/02_About/about-founder-mobile-framed.webp"
+                alt={`${SITE.founder}, founder of TwinFinish Painting & Tiling`}
+                width={1122}
+                height={1582}
+                sizes="100vw"
+                loading="eager"
+                fetchPriority="high"
+              />
+            </picture>
             <figcaption>
               <b>{SITE.founder}</b>
               <span>Founder</span>

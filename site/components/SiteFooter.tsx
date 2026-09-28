@@ -66,8 +66,8 @@ export default function SiteFooter() {
             © {new Date().getFullYear()} {SITE.name}. All rights reserved.
           </span>
           <span>
-            Project images are visual concepts — replace with verified completed-work photography
-            before public launch.
+            Website by <a href="https://stopher-malik.co.za">Stopher Malik</a> ·{" "}
+            <a href="https://smk.stopher-malik.co.za">SMK Web Design</a>.
           </span>
         </div>
       </div>

@@ -50,6 +50,7 @@ export default function ServicesPage() {
   return (
     <>
       <PageHero
+        clearPhoto
         eyebrow="Services"
         title="Painting and tiling, handled with care."
         lead="Focused services for residential, rental, office and commercial spaces, from surface preparation through to the final finish."
